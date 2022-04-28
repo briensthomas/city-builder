@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/select.css">
     <title>Document</title>
 </head>
 
@@ -19,10 +20,9 @@
         </div>
     </header>
     <main>
-        <div class="left-side">
+        <div class="left-side container">
             <div>
-                <label>
-                    Architecture
+                <label>Architecture
                     <select id="architecture-select">
                         <option value="eiffeltower">Eiffel Tower</option>
                         <option value="lightpyramid">Louvre</option>
@@ -47,10 +47,14 @@
                         <option value="sapphirepool">Sapphire Pool</option>
                     </select>
                 </label>
-                <label>
+            </div>    
+            <div>
+                <label>Slogan
                     <input id="sloganInput" />
-                    <button id="sloganButton">Submit</button>
                 </label>
+            </div>
+            <div>
+                <button id="sloganButton">Submit</button>
             </div>
             <div>
                 <p id="counts"> 
