@@ -1,1 +1,11 @@
-/* add home page styles here */
+#architecture {
+    background-image: url('../assets/eiffeltower-architecture.jpg');
+}
+
+#climate {
+    background-image: url('../assets/cold-climate.jpg');
+}
+
+#mustSee {
+    background-image: url('../assets/aquarium-mustSee.jpg');
+}
