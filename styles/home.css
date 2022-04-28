@@ -1,11 +1,36 @@
 #architecture {
-    background-image: url('./assets/eiffeltower-architecture.jpg');
+    background-image: url('../assets/eiffeltower.png')
 }
 
 #climate {
-    background-image: url('../assets/cold-climate.jpg');
+    background-image: url('./assets/cold.png')
 }
 
 #mustSee {
-    background-image: url('../assets/aquarium-mustSee.jpg');
+    background-image: url('./assets/aquarium.png')
+}
+
+.left-side {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .city {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: auto;
+} */
+
+.bg {
+    width: 640px;
+    height: 426px;
+    margin: 25px;
 }

@@ -19,7 +19,7 @@
         </div>
     </header>
     <main>
-        <div>
+        <div class="left-side">
             <div>
                 <label>
                     Architecture
@@ -33,7 +33,7 @@
             <div>
                 <label>Climate
                     <select id="climate-select">
-                        <option value="cold-climate">Snow</option>
+                        <option value="cold">Snow</option>
                         <option value="lightning">Storms</option>
                         <option value="warm">Sunny</option>
                     </select>
@@ -47,6 +47,26 @@
                         <option value="sapphirepool">Sapphire Pool</option>
                     </select>
                 </label>
+                <label>
+                    <input id="sloganInput" />
+                    <button id="sloganButton">Submit</button>
+                </label>
+            </div>
+            <div>
+                <p id="counts"> 
+                </p>
+                <div id="slogan">
+                </div>
+            </div>
+        </div>
+        <div class="right-side">
+            <div>
+                <div class="bg" id="architectureImage">
+                </div>
+                <div class="bg" id="climateImage">
+                </div>
+                <div class="bg" id="mustSeeImage">
+                </div>
             </div>
         </div>
     </main>
