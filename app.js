@@ -21,6 +21,12 @@ let sloganArray = [];
 // set event listeners 
 architectureSelect.addEventListener('change', () => {
     architectureEl.style.backgroundImage = `url('./assets/${architectureSelect.value}.png')`;
+    
+    // const img = document.createElement('img');
+
+    // img.src = `./assets/${architectureSelect.value}.png`;
+    // architectureEl.appendChild(img);
+    // architectureEl.style.backgroundImage = `url('./assets/${architectureSelect.value}.png')`;
     architectCount++;
     displayCounts();
 });
