@@ -15,21 +15,29 @@
 
 <body>
     <header>
-        <div class="gutter-right logo">
-            <img src="./assets/big-logo.png" />
+        <div class="gutter-right">
+            <h2 id="cityName">Alchemist's Utopia</h2>
         </div>
     </header>
     <main>
-        <div class="left-side container">
-            <div>
-                <label>Architecture
-                    <select id="architecture-select">
-                        <option value="eiffeltower">Eiffel Tower</option>
-                        <option value="lightpyramid">Louvre</option>
-                        <option value="monastery">Monastery</option>
-                    </select>
-                </label>
-            </div>
+        <div>
+            <input type="text" placeholder="Name Your City!" id="cityInput">
+            <button id="cityButton">Submit</button>
+        </div>
+    <div class="row">
+        <div class="column">
+                <div>
+                    <label>Architecture
+                        <select id="architecture-select">
+                            <option value="eiffeltower">Eiffel Tower</option>
+                            <option value="lightpyramid">Louvre</option>
+                            <option value="monastery">Monastery</option>
+                        </select>
+                    </label>
+                    <img class="bg resize" id="architectureImage" src="./assets/eiffeltower.png" />
+                </div>
+        </div>
+        <div class="column">
             <div>
                 <label>Climate
                     <select id="climate-select">
@@ -38,41 +46,36 @@
                         <option value="warm">Sunny</option>
                     </select>
                 </label>
+                <img class="bg resize" id="climateImage" src="./assets/cold.png" />
             </div>
+        </div>
+        <div class="column">
             <div>
                 <label>Must See Attractions
                     <select id="mustSee-select">
                         <option value="aquarium">Aquarium</option>
-                        <option value="historymuseum">Museum of Natural History</option>
+                        <option value="historymuseum">Museum</option>
                         <option value="sapphirepool">Sapphire Pool</option>
                     </select>
                 </label>
-            </div>    
-            <div>
-                <label>Slogan
-                    <input id="sloganInput" />
-                </label>
-            </div>
-            <div>
-                <button id="sloganButton">Submit</button>
-            </div>
-            <div>
-                <p id="counts"> 
-                </p>
-                <div id="slogan">
-                </div>
-            </div>
+                <img class="bg resize" id="mustSeeImage" src="./assets/aquarium.png" />
+            </div>  
         </div>
-        <div class="right-side">
-            <div class="resize">
-                <div class="bg" id="architectureImage">
-                </div>
-                <div class="bg" id="climateImage">
-                </div>
-                <div class="bg" id="mustSeeImage">
-                </div>
-            </div>
+    </div>
+    <div>
+            <input placeholder="Your city's slogan" id="sloganInput" />
+    </div>
+    <div>
+        <button id="sloganButton">Submit</button>
+    </div>
+    <div>
+        <p id="counts"> You have changed the Architecture 0 times, 
+            the Climate 0 times, and the Must See Attractions 0 times, 
+            and your City's Slogans are:
+        </p>
+        <div id="slogan">
         </div>
+    </div>  
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2020(2) Alchemy Code Lab</div>
