@@ -23,10 +23,13 @@ let mustSeeCount = 0;
 
 let cityArray = [];
 let sloganArray = [];
+
+let architectArray = ['eiffeltower', 'lightpyramid', 'monastery'];
+// let climateArray = ['cold', 'lightning', 'warm'];
+// let attractionsArray = ['aquarium', 'historymuseum', 'sapphirepool'];
 // set event listeners 
 
 cityButton.addEventListener('click', () => {
-    console.log('changing city name');
     cityName.textContent = ' ';
     cityName.textContent = `${cityInput.value}`;
     cityArray.push(cityInput.value);
@@ -37,6 +40,16 @@ architectureSelect.addEventListener('change', () => {
     architectCount++;
     displayCounts();
 });
+
+const changeArchitecture = () => {
+    setInterval(
+        function() {
+            architectureEl.src = `./assets/${architectArray.value}.png`;
+            architectArray++;
+        }, 3000);
+};
+
+window.onload = changeArchitecture;
 
 climateSelect.addEventListener('change', () => {
     climateEl.src = `./assets/${climateSelect.value}.png`;
@@ -51,7 +64,6 @@ mustSeeSelect.addEventListener('change', () => {
 });
 
 sloganButton.addEventListener('click', () => {
-    console.log('changing the slogan');
     sloganArray.push(sloganInput.value);
     sloganInput.value = ' ';
     displaySlogan();
@@ -65,7 +77,6 @@ const displaySlogan = () => {
   // for let of loop displays each slogan in the array
     for (let sloganInput of sloganArray) {
         for (let city of cityArray) {
-            console.log(sloganArray);
             // creates a new div to hold the contents of the array
             const sloganDiv = document.createElement('div');
             // tells the document where to add in the new element

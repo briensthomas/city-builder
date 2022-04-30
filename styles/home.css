@@ -40,8 +40,8 @@
 .border {
     border: 2px solid var(--jewel);
 }
-
+/* 
 img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-}
+} */
